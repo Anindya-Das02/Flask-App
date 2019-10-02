@@ -72,7 +72,7 @@
 	<services>
 		<menu>
 			<menuItem id="1">
-				<name> masala dosa</name>
+				<name>masala dosa</name>
 				<cost currency="inr">35</cost>
 				<description>spicy masala dosa</description>
 				<rating>7.5</rating>
