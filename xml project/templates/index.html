@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABC Resturant</title>
+	{% include 'styling.html' %}
+	<style>
+		.body-style{
+			background-image: url("static/food-1932466_960_720.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			height: 100vh;
+		}
+		.box-style{
+			height:200px;
+			background-color: white;
+			opacity: 0.85;
+			padding-top: 20px;
+		}
+		.box-style h3{
+			font-family: cursive;
+		}
+		.img-box-style{
+			height:200px;
+		}
+		.new-row{
+			margin-bottom: 28px;
+			margin-top: 5px;
+			border: 2px solid white;
+		}
+	</style>
+</head>
+<body class="body-style">
+	{% include 'navbar.html' %}
+
+	<div class="container" style="margin-bottom: 100px;">
+		<div style="margin-top: 150px;height: 400px;padding-top: 15px;">
+			<center>
+				<h1 style="color: white;font-size: 80px;font-family: arial;">Welcome to ABC's Resturant</h1>
+				<h2 style="color: white;font-family: cursive;">Get delicious food items delivered at your door steps</h2>
+				<h5 style="color: white;"><i class="fa fa-phone" style="color:white"></i>&nbsp;{{phone_no}}</h5>
+			</center>
+		</div>
+
+		<div class="row new-row">
+			<div class="col-md-3 " style="background-repeat: no-repeat;background-size: cover;background-image: url({{url_for('static', filename='download.jpg')}});" >		
+			</div>
+			<div class="col-md-9 box-style">
+				<h3>get freshly cooked meals made in a clean environment. get the home made food wali feeling ;)</h3>	
+			</div>
+			
+		</div>
+
+		<div class="row new-row">
+			<div class="col-md-9 box-style">
+				<h3>choose from a variety of delicious cuisine. ordering food will never be the same again (>~<)</h3>
+			</div>
+			<div class="col-md-3 img-box-style" style="background-repeat: no-repeat;background-size: cover;background-image: url({{url_for('static', filename='huge_variety.jpg')}});"></div>
+			
+		</div>
+
+		<div class="row new-row">
+			<div class="col-md-3 " style="background-repeat: no-repeat;background-size:cover;background-image: url({{url_for('static', filename='Food-Delivery.jpg')}});" >		
+			</div>
+			<div class="col-md-9 box-style">
+				<h3>get your order delivered warm and fresh with our super-fast delivery system. just order and set the table ;)</h3>
+			</div>
+			
+		</div>
+		
+
+	</div>
+	{% include 'footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Page</title>
+	{% include 'styling.html' %}
+	<style type="text/css">
+		body{
+			background-image: url("static/828279_black-pepper-cinnamon-curry-dishes-red-pepper-spices-star-anise-table_7500x5000_h.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.row-style{
+			border: 2px solid white;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-right: 30px;
+		}
+		.box-body-style{
+			background-color: white;
+			opacity: 0.95;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	{% include 'navbar.html' %}
+
+	<div class="container" style="margin-top: 25px;">
+
+		{% for img,name,price,rating,des in zip(img_src_list,name_list,price_list,rating_list,des_lisk_list) %}
+		  <div class="row row-style">
+		  	<div class="col-md-3">
+		  		<img src="{{img}}" style="height: 200px;width:273px;margin-left: -15px;">
+		  		 
+		  	</div>
+		  	<div class="col-md-9 box-body-style">
+		  		<form method="post" action="/orders">
+		  		<p>
+		  			<h3> <a href="{{des}}">{{name}}</a> </h3>
+		  			<h5>price: Rs {{price}}</h5>
+		  			<h5>ratings: {{rating}}</h5>
+		  		</p>
+		  		    <input type="text" name="food_item_name" value="{{name}}" style="display: none;" />
+		  		    <input type="text" name="food_item_price" value="{{price}}" style="display: none;" />
+		  			<button class="btn btn-warning" style="float: right;margin-top: 0px;opacity: 1;"> order </button>
+		  		</form>
+		  		
+		  	</div>
+		  	
+		  </div>
+
+		{% endfor %}
+		
+	</div>
+
+	{% include 'footer.html' %}
+
+</body>
+</html>

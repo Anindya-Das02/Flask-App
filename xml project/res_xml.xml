@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resturant SYSTEM "res_xml_dtd.dtd">
+<resturant>
+	<information>
+		<name>ABC resturant</name>
+		<address>
+			<local>Shop no.:15,Java road,SRMIST,KTR</local>
+			<state>Tamil Nadu</state>
+			<country>India</country>
+		</address>
+		<owner>Mr. Thanos</owner>
+		<telephone>+91-9784125630</telephone>
+		<website>www.ABCresturant.com</website>
+		<about-us>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</about-us>
+	</information>
+
+	<employees>
+		<employee id="1">
+			<name>rajesh</name>
+			<contact>+91-9874663210</contact>
+			<salary>25000</salary>
+			<address>street 1</address>
+			<job-description>manager</job-description>
+		</employee>
+		<employee id="2">
+			<name>mukul</name>
+			<contact>+91-9974663210</contact>
+			<salary>15000</salary>
+			<address>street 2</address>
+			<job-description>cook</job-description>
+		</employee>
+		<employee id="3">
+			<name>kamal</name>
+			<contact>+91-9874663501</contact>
+			<salary>15000</salary>
+			<address>street 2</address>
+			<job-description>cook</job-description>
+		</employee>
+		<employee id="4">
+			<name>ashish</name>
+			<contact>+91-7774663210</contact>
+			<salary>6000</salary>
+			<address>street 11</address>
+			<job-description>janitor</job-description>
+		</employee>
+		<employee id="5">
+			<name>sid</name>
+			<contact>+91-7874663210</contact>
+			<salary>8000</salary>
+			<address>street 15</address>
+			<job-description>waiter</job-description>
+		</employee>
+		<employee id="6">
+			<name>nara</name>
+			<contact>+91-7874063550</contact>
+			<salary>8000</salary>
+			<address>street 12</address>
+			<job-description>waiter</job-description>
+		</employee>
+		<employee id="7">
+			<name>john</name>
+			<contact>+91-7884663210</contact>
+			<salary>8000</salary>
+			<address>street 14</address>
+			<job-description>waiter</job-description>
+		</employee>
+	</employees>
+
+	<services>
+		<menu>
+			<menuItem id="1">
+				<name> masala dosa</name>
+				<cost currency="inr">35</cost>
+				<description>spicy masala dosa</description>
+				<rating>7.5</rating>
+				<description-link>/menu/dosa</description-link>
+				<category>south indian,breakfast</category>
+				<img-src>static/Featured-image-masala-dosa-recipe.jpg</img-src>
+			</menuItem>
+			<menuItem id="2">
+				<name>idli</name>
+				<cost currency="inr">30</cost>
+				<description>fresh steamed and delicious idlis</description>
+				<rating>7.0</rating>
+				<category>south indian</category>
+				<description-link>/menu/idli</description-link>
+				<img-src>static/idli-56a510b63df78cf772862c34.jpg</img-src>
+			</menuItem>
+			<menuItem id="3">
+				<name>Kulfi</name>
+				<cost currency="inr">50</cost>
+				<description>Intensely sweet and dense, kulfi is to Indians what gelato is for Italians. Since it is not churned, kulfi freezes as a solid mass so it is best to let it sit for a minute before being devoured.</description>
+				<rating>7.0</rating>
+				<category>indian sweets</category>
+				<description-link>/menu/kulfi</description-link>
+				<img-src>static/original_Kulfi.jpg</img-src>
+			</menuItem>
+			<menuItem id="4">
+				<name>Kheer</name>
+				<cost currency="inr">65</cost>
+				<description>A creamy Indian rice pudding laced with cardamom, kheer is often prepared with sliced blanched almonds and raisins. It is commonly enhanced with saffron for very festive occasions such as Diwali or weddings.</description>
+				<rating>7.0</rating>
+				<category>indian sweets</category>
+				<description-link>/menu/kheer</description-link>
+				<img-src>static/original_Kheer.jpg</img-src>
+			</menuItem>
+			<menuItem id="5">
+				<name>Jaleebi</name>
+				<cost currency="inr">45</cost>
+				<description>Sweet, sticky and irresistible, jaleebi are deep-fried Indian sweets that are soaked in sugar syrup. The batter is commonly made of chickpea flour and the yellow color is derived from saffron or - sometimes - artificial colorings.</description>
+				<rating>7.0</rating>
+				<category>indian sweets</category>
+				<description-link>/menu/jaleebi</description-link>
+				<img-src>static/original_Jaleebi.jpg</img-src>
+			</menuItem>
+			<menuItem id="6">
+				<name>Gulab Jamun</name>
+				<cost currency="inr">55</cost>
+				<description>Often referred to as Indian donuts, gulab jamun are deep-fried dumplings that are soaked in a sugar syrup laced with rose water. Intensely sweet, just one small dumpling will be enough to satisfy your craving (unless, of course, you have a major sweet tooth).</description>
+				<rating>7.0</rating>
+				<category>indian sweets</category>
+				<description-link>/menu/gulab%20jamun</description-link>
+				<img-src>static/original_Gulab.Jamun.jpg</img-src>
+			</menuItem>
+			<menuItem id="7">
+				<name>Amritsari chicken masala</name>
+				<cost currency="inr">120</cost>
+				<description>Boneless chunks of chicken lathered with a rich, buttery gravy of cream, tomatoes and spices. This cuisine is definitely worth trying, especially during festive season. So, impress your guests with nothing but the best. </description>
+				<rating>8.75</rating>
+				<category>chicken item</category>
+				<description-link>/menu/Amritsari chicken masala</description-link>
+				<img-src>static/Amritsari chicken masala.jpg</img-src>
+			</menuItem>
+			<menuItem id="8">
+				<name>Teekha Murg</name>
+				<cost currency="inr">120</cost>
+				<description>Tender chicken spiked with fiery masalas, cooked in mustard oil with the tang of tomatoes to balance the flavours. This spicy delicacy should be teamed with either rumali roti or khamiri roti to balance the spiciness. If you are a die-hard chicken lover, this Indian chicken recipe is for you. </description>
+				<rating>7.0</rating>
+				<category>chicken item</category>
+				<description-link>/menu/Teekha Murg</description-link>
+				<img-src>static/teekha-murgh.jpg</img-src>
+			</menuItem>
+			<menuItem id="9">
+				<name>Butter Chicken</name>
+				<cost currency="inr">120</cost>
+				<description>Straight from a Punjabi kitchen, butter chicken has been an instant hit through the years. Marinated overnight, the chicken is roasted and cooked in tomato puree, cream and masalas. Enjoy the classic creaminess of the dish with this recipe.</description>
+				<rating>7.0</rating>
+				<category>chicken item</category>
+				<description-link>/menu/butter chicken</description-link>
+				<img-src>static/LREdit_Wordpress-4528.jpg</img-src>
+			</menuItem>
+			<menuItem id="10">
+				<name>Medu Vada</name>
+				<cost currency="inr">35</cost>
+				<description>Crispy and sinful, this urad dal based snack is a favourite of many and who can blame them? Spruce it up with some coconut chutney and serve piping hot.</description>
+				<rating>7.5</rating>
+				<category>south indian</category>
+				<description-link>/menu/medu vada</description-link>
+				<img-src>static/maxresdefault-3.jpg</img-src>
+			</menuItem>
+
+		</menu>
+	</services>
+</resturant>

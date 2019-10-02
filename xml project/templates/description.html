@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>description</title>
+	{% include 'styling.html' %}
+	<style type="text/css">
+		.box{
+			margin-top: 15px;
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+<body>
+
+	{% include 'navbar.html' %}
+
+	<div class="container">
+		<div style="margin-top: 15px;">
+			<center>
+				<img src="../{{img}}" height="400px" min-width="400px" />
+			</center>
+		</div>
+		<center>
+			<div class="box">
+				<h1>{{food_name}}</h1>				
+			</div>
+			<div class="box">
+				{{desp}}
+			</div>
+		</center>
+		<p><b>price: Rs. {{cost}}</b></p>
+
+		
+	</div>
+	{% include 'footer.html' %}
+		
+
+</body>
+</html>
