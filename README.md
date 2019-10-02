@@ -1,6 +1,7 @@
 # Flask-App
 Project for XML and web services
 
+<b>Frame-work used:</b> Flask (micro web framework written in Python)
 <h2>How to run the app</h2>
 <ul>
   <li>open the app.py python file</li>
