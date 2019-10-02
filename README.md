@@ -8,4 +8,6 @@ Project for XML and web services
   <li>after executing open browser, in url type http://127.0.0.1:5000</li>
   <li>the web app will open</li>
 <ul>
-    
+<p> 
+Learn xml parsing using python: https://docs.python.org/2/library/xml.etree.elementtree.html
+</p>
